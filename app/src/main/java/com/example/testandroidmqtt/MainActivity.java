@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements MqttCallback, IMq
 
     /*
         messageArrived(String topic, MqttMessage message)
-        El codigo de esta seccion es el que conecta he interactua con el servidor
+        El codigo de esta seccion es el que conecta he interactua con el servidor esta seccion es la mas importante
         param   -> String, MqttMessage
         return  -> void
     */
@@ -207,6 +207,12 @@ public class MainActivity extends AppCompatActivity implements MqttCallback, IMq
 
     }
 
+    /*
+        printDetail()
+        muestra detalles de la conexion
+        param   -> void
+        return  -> void
+    */
     private void printDetail()
     {
         Log.d(TAG, "Client: "+clientId);
